@@ -1,0 +1,23 @@
+python -m venv venv
+source venv/bin/activate -> Linux
+.\venv\Scripts\Activate.ps1 -. Windows
+
+pip install django -> instalação
+django-admin --version -> verificação da instalação
+django-admin startproject app . -> iniciação do projeto
+django-admin --help -> ferramentas possiveis do django
+python manage.py runserver -> subir o servidor no localhost para testar a aplicação
+
+settings.py -> contem todas as configurações do app, pode configurar variaveis, banco de dados
+
+__init__.py -> server no python q o diretorio é um pacote de codigo python
+
+asgi ->  Aé assíncrono, gerenciando múltiplas requisições simultâneas e suportando WebSockets para tempo real, 
+sendo o padrão para aplicações modernas e performáticas.
+
+wsgi -> é síncrono e processa requisições uma por uma, ideal para sites tradicionais
+
+urls -> gerenciamento de rotas do servidor django
+
+dbsqlite3 -> banco de dados de teste pro django, arquivo binario de todo registro, tarefas ou todos os modelos
+

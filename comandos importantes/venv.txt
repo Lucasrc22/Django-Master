@@ -21,3 +21,16 @@ urls -> gerenciamento de rotas do servidor django
 
 dbsqlite3 -> banco de dados de teste pro django, arquivo binario de todo registro, tarefas ou todos os modelos
 
+python manage.py startapp app -> um app novo no projeto
+
+you -> urls -> views -> models -> db 
+|                    
+templates  <-  views  <- models    <-  db
+
+makemigrations => comandos para o banco de dados, dentro pode ter um create table por exemplo
+
+migrate => comando de executar as migrations, criando toda estrutura do banco de dados necessária
+
+sempre rodar makemigrations, depois migrate
+
+extensão sqlite viwer

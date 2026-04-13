@@ -34,3 +34,7 @@ migrate => comando de executar as migrations, criando toda estrutura do banco de
 sempre rodar makemigrations, depois migrate
 
 extensão sqlite viwer
+
+ativar o Inline Assistant AI
+Configurações (Ctrl+,) e pesquise por editor.inlineSuggest.enabled
+habilitar github copilot

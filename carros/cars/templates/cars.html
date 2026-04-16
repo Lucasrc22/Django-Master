@@ -1,0 +1,18 @@
+<html lang="pt-BR">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Lista de Carros</title>
+        </head>
+            {%block content %}
+            <body>
+                {% for car in cars %} <!--linguagem de template-->
+                    <h3>{{car.brand}} - {{car.model}} - {{car.factory_year}}</h3>
+                {%endfor%}
+            </body>
+        {%endblock%}
+</html> 
+<!-- Este é um template HTML que exibe uma lista de carros. 
+Ele utiliza a sintaxe de template do Django para acessar a variável 'cars' que foi passada pela view. 
+No exemplo, ele exibe o modelo do carro usando {{ cars.model }}. 
+<!-- O template está estruturado com um bloco de conteúdo que pode ser estendido por outros templates, caso necessário. -->

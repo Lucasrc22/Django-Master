@@ -10,10 +10,6 @@ class Brand(models.Model): #Nome da classe que criará na tabela do banco de dad
         return self.name #definir o nome da marca como representação do objeto no admin
 
 
-
-
-
-
 class Car(models.Model): #Nome da classe que criará na tabela do banco de dados
     id = models.AutoField(primary_key=True) #Campo de identificação único para cada carro, chave primaria do banco de dados
     model = models.CharField(max_length=200) # Campo de texto, max_lenght-max de caracters

@@ -3,8 +3,8 @@ from cars.models import Car
 
 
 def cars_view(request):
-    cars = Car.objects.all() 
-    print(cars)#retorna todos os objetos do modelo Car, equivalente a SELECT * FROM Car
+    cars = Car.objects.filter(brand__name = 'Honda') #.filter() é um método do Django ORM que permite filtrar os objetos com base em condições específicas.
+    #cars = Car.objects.all() #.all() é um método do Django ORM que retorna todos os objetos do modelo Car, ou seja, todos os carros cadastrados no banco de dados.
     return render(
         request, 
         'cars.html',

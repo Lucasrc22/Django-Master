@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Adicionar um novo carro</h1>
+    <form method="post" enctype="multipart/form-data"> <!-- enctype="multipart/form-data" é necessário para enviar arquivos -->
+        {% csrf_token %} <!-- Token de segurança para prevenir CSRF, ataques hackers por exemplo -->
+        <table>
+            {{form.as_table}}
+        </table>
+
+        <input type="submit" value= "Cadastrar" class = "btn btn-primary"></input>
+    </form>
+{% endblock %}

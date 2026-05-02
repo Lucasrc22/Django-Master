@@ -1,0 +1,74 @@
+# Python
+
+**pycache**/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+
+venv/
+.env/
+.env.*
+
+# Django
+
+*.log
+db.sqlite3
+db.sqlite3-journal
+
+# Media files (uploads)
+
+media/
+
+# Static files coletados
+
+staticfiles/
+
+# Arquivos de ambiente
+
+.env
+
+# IDEs
+
+.vscode/
+.idea/
+
+# Sistema operacional
+
+.DS_Store
+Thumbs.db
+
+# Pytest / coverage
+
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Migrations (opcional - depende do seu fluxo)
+
+# */migrations/*
+
+# !*/migrations/**init**.py
+
+# Arquivos temporários
+
+*.swp
+*.swo
+
+# Node (caso use frontend junto)
+
+node_modules/
+
+# Build / dist
+
+dist/
+build/
+
+# Logs
+
+*.log
+
+# Secrets
+
+*.key
+*.pem
